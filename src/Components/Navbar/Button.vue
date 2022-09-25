@@ -13,12 +13,13 @@
       dark:text-white
     "
   >
-    f{{ title }}f
+    <component :is="icon" />
+    {{ title }}
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title'],
+  props: ['title', 'icon'],
 };
 </script>

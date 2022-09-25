@@ -19,7 +19,8 @@
         class="flex flex-row space-x-4 font-mono text-white text-sm font-bold"
       >
         <Button title="Projects" />
-        <Button button-label="About" />
+        <Button title="About" />
+        <Button :icon="SunIcon" />
 
         <div
           class="
@@ -32,9 +33,7 @@
             shadow-xl
             border-2
           "
-        >
-          <SunIcon class="h-6 w-6 text-black dark:text-white" />
-        </div>
+        ></div>
       </div>
     </div>
   </div>
