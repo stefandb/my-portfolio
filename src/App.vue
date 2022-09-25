@@ -8,18 +8,74 @@
       dark:bg-black dark:text-white
     "
   >
-    <nav class="w-full p-8 flex justify-center md:space-x-4">
-      <!-- Start left menu -->
-      <div class="hidden">LEFT</div>
-      <!-- End left menu -->
+    <div class="w-full p-8 flex justify-between">
+      <div>
+        <!-- Start LOGO -->
+        <div class="font-Rampart text-3xl md:text-4xl">Stefan de bruin</div>
+        <!-- End LOGO -->
+      </div>
 
-      <!-- Start LOGO -->
-      <div class="font-Rampart text-3xl md:text-4xl">Stefan de bruin</div>
-      <!-- End LOGO -->
+      <div
+        class="flex flex-row space-x-4 font-mono text-white text-sm font-bold"
+      >
+        <div
+          class="
+            px-2
+            py-2
+            rounded-lg
+            flex
+            items-center
+            justify-center
+            shadow-xl
+            border-2
+            text-black
+            dark:text-white
+          "
+        >
+          Projects
+        </div>
+        <div
+          class="
+            px-2
+            py-2
+            rounded-lg
+            flex
+            items-center
+            justify-center
+            shadow-xl
+            border-2
+            text-black
+            dark:text-white
+          "
+        >
+          About
+        </div>
 
-      <!-- Start right menu -->
-      <div class="hidden">RIGHT</div>
-      <!-- End right menu -->
-    </nav>
+        <div
+          class="
+            px-2
+            py-2
+            rounded-lg
+            flex
+            items-center
+            justify-center
+            shadow-xl
+            border-2
+          "
+        >
+          <SunIcon class="h-6 w-6 text-black dark:text-white" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import { MoonIcon, SunIcon } from '@heroicons/vue/24/solid';
+export default {
+  components: {
+    MoonIcon,
+    SunIcon,
+  },
+};
+</script>
