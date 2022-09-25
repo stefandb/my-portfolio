@@ -13,6 +13,12 @@
       dark:text-white
     "
   >
-    Projects
+    f{{ title }}f
   </div>
 </template>
+
+<script>
+export default {
+  props: ['title'],
+};
+</script>

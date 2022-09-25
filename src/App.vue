@@ -18,38 +18,8 @@
       <div
         class="flex flex-row space-x-4 font-mono text-white text-sm font-bold"
       >
-        <div
-          class="
-            px-2
-            py-2
-            rounded-lg
-            flex
-            items-center
-            justify-center
-            shadow-xl
-            border-2
-            text-black
-            dark:text-white
-          "
-        >
-          Projects
-        </div>
-        <div
-          class="
-            px-2
-            py-2
-            rounded-lg
-            flex
-            items-center
-            justify-center
-            shadow-xl
-            border-2
-            text-black
-            dark:text-white
-          "
-        >
-          About
-        </div>
+        <Button title="Projects" />
+        <Button button-label="About" />
 
         <div
           class="
@@ -72,10 +42,12 @@
 
 <script>
 import { MoonIcon, SunIcon } from '@heroicons/vue/24/solid';
+import Button from './Components/Navbar/Button.vue';
 export default {
   components: {
     MoonIcon,
     SunIcon,
+    Button,
   },
 };
 </script>
